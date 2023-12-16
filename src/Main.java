@@ -1,4 +1,3 @@
-import java.sql.Array;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -32,14 +31,11 @@ public class Main {
 
         System.out.println("visualizza contenuto lista" + numbers);
 
-
-        while (iterator.hasNext()) {
-            String number = iterator.next();
-            if (number.equals(null)) {
-                number = null;
-            }
+//Non so se ho ben interpretato la richiesta...
+        if (numbers.isEmpty()){
+            System.out.println("verifica effettuata. Lista aggiornata: elementi presenti: " + numbers.size());
         }
-        System.out.println("tutti gli elementi sono stati eliminati");
     }
 }
+
 
